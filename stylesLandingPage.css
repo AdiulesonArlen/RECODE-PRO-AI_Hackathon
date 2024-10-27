@@ -12,7 +12,7 @@ body {
     background-color: var(--verde-escuro);
     color: white;
     line-height: 1.6;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 :root {
@@ -28,7 +28,6 @@ body {
     background: var(--verde-escuro);
 }
 
-/* Classes Reutilizáveis */
 .container {
     max-width: 1200px;
     padding: 0 5%;
@@ -50,6 +49,7 @@ body {
 }
 
 /* Estilos para o Navbar */
+/* Ajuste no Navbar para alinhar os links à direita */
 nav {
     display: flex;
     justify-content: space-between;
@@ -57,32 +57,41 @@ nav {
     padding: 20px 0;
 }
 
-.logo a {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-}
-
 .ul {
     display: flex;
     align-items: center;
     list-style: none;
-}
-
-.ul li {
-    margin: 0 20px;
-    font-size: 1rem;
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-left: auto; /* Move a lista para a direita */
 }
 
 .ul li a {
     color: white;
     transition: color 0.3s;
+    padding: 10px 15px; /* Ajuste o padding conforme necessário */
+    border-radius: 5px;
 }
 
+/* Estilo para o botão 'Começar' */
+.ul li .btn-gradient {
+    padding: 10px 20px;
+    color: white;
+    background-image: var(--degrade-btn);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.ul li .btn-gradient:hover {
+    background-image: linear-gradient(#ff5c00, #fe9611);
+}
+
+/* Estilo para o link 'Fale Conosco' */
 .ul li a:hover {
     color: var(--laranja);
 }
+
 
 /* Header e Main */
 main .container {
@@ -139,12 +148,6 @@ main .container {
     align-items: center;
 }
 
-/* Icone do Menu para Mobile */
-.menu-icon {
-    display: none;
-    cursor: pointer;
-}
-
 /* Seções de Conteúdo */
 section {
     padding: 50px 0;
@@ -189,15 +192,17 @@ footer {
 
 /* Responsividade */
 @media (max-width: 960px) {
-    .menu-icon {
-        display: block;
-    }
-
     .ul {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    main .container {
+    .ul li {
+        margin: 10px 0;
+    }
+
+    .main .container {
         flex-direction: column;
     }
 
