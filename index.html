@@ -1,62 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Central de informações de emergência para enchentes no Rio Grande do Sul">
-  <title>Enchentes RS: Central de Emergência</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesLandingPage.css">
+    <title>Central de Emergência - Enchentes no RS</title>
 </head>
-
-<body class="bg-light d-flex flex-column justify-content-between">
-
-  <!-- Cabeçalho -->
-  <header class="text-center py-5 bg-success text-white">
-    <h1>Enchentes RS: Central de Emergência</h1>
-    <p>Ajudando você a se preparar e agir durante enchentes</p>
-  </header>
-  
-  <main class="flex-grow-1">
-    <!-- Alerta de Emergência -->
-    <div class="alert alert-danger text-center my-3 bi bi-exclamation-triangle">
-      Alerta de enchentes em sua região! <strong>Saiba o que fazer agora.</strong>
+<body>
+    <div class="background-verde">
+        <!-- header -->
+        <header>
+            <!-- container -->
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="Design sem nome (4).png" alt="Design sem nome" class="logo-img">
+                        </a>
+                    </div>
+                    <ul class="ul">
+                        <li><a href="#map-section">Mapa</a></li>
+                        <li><a href="#team-section">Equipe</a></li>
+                        <li><a href="#contact-section">Contato</a></li>
+                        <li><a href="comecar.html"><button class="btn-gradient">Começar</button></a></li>
+                    </ul>
+                    <div class="menu-icon">
+                        <img src="menu.png" alt="menu-icon">
+                    </div>
+                </nav>
+            </div>
+            <!-- fim container -->
+        </header>
+        <!-- fim header -->
+        
+        <!-- main -->
+        <main>
+            <!-- container -->
+            <div class="container">
+                <!-- main text -->
+                <div class="main-text">
+                    <h1>CENTRAL DE EMERGÊNCIA.</h1>
+                    <h2>Alerta em Tempo Real</h2>
+                    <div>
+                        <a href="#about-section"><button class="btn-gradient">Saiba+</button></a>
+                        <div class="main-img help-img">
+                            <img src="help.png" alt="help">
+                        </div>
+                    </div>
+                </div>
+                <!-- fim main text -->
+                
+                <!-- main-img -->
+                <div class="main-img voluntarios-img">
+                    <img src="voluntarios.png" alt="voluntarios">
+                </div>
+                <!-- fim main-img -->
+            </div>
+            <!-- fim container -->
+        </main>
+        <!-- fim main -->
     </div>
 
-    <!-- Botões de Links Úteis -->
-    <section class="buttons container text-center my-5">
-      <div class="row row-cols-1 row-cols-md-2 g-3">
-        <div class="col">
-          <a href="mapa.html" class="btn btn-outline-success btn-lg w-100"><i class="bi bi-cloud-rain"></i> Mapa Meteorológico</a>
-        </div>
-        <div class="col">
-          <a href="evacuacao.html" class="btn btn-outline-danger btn-lg w-100"><i class="bi bi-exclamation-triangle"></i> Mapa de Evacuação</a>
-        </div>
-        <div class="col">
-          <a href="preparacao.html" class="btn btn-outline-success btn-lg w-100"><i class="bi bi-info-circle"></i> Como se Preparar?</a>
-        </div>
-        <div class="col">
-          <a href="durante-enchente.html" class="btn btn-outline-danger btn-lg w-100"><i class="bi bi-exclamation-diamond"></i> Durante a Enchente?</a>
-        </div>
-        <div class="col">
-          <a href="contatos.html" class="btn btn-outline-success btn-lg w-100"><i class="bi bi-telephone"></i> Contatos de Emergência</a>
-        </div>
-        <div class="col">
-          <a href="abrigos.html" class="btn btn-outline-danger btn-lg w-100"><i class="bi bi-house-door"></i> Abrigos Próximos</a>
-        </div>
-      </div>
+    <!-- Section com o conteúdo adicional sobre o projeto -->
+    <section id="about-section">
+        <header>
+            <h1>Bem-vindo ao Enchentes no RS: A Ajuda Que Você Precisa, Quando Precisa</h1>
+            <p>Imagine um local onde informações vitais sobre enchentes estejam sempre ao seu alcance. Imagine poder saber exatamente para onde ir, como agir e o que esperar, tudo com apenas alguns cliques. Esse é o propósito do "Enchentes no RS" – um projeto feito com o coração, dedicado a proteger e informar a comunidade do Rio Grande do Sul e a todos aqueles afetados por essa realidade.</p>
+        </header>
+
+        <section>
+            <h2>Nossa História: Do Sonho à Solução</h2>
+            <p>O "Enchentes no RS" nasceu de um sonho simples e poderoso: preparar e proteger a população diante da força imprevisível das enchentes. Nossa jornada teve início com um grupo de jovens idealizadores, comprometidos em fazer a diferença e movidos pelo desejo de construir uma ferramenta prática e acessível. Sabíamos que, para realmente causar um impacto positivo, precisaríamos de mais do que ideias; precisaríamos de ação. Assim, passamos por três etapas fundamentais que deram forma a este projeto: <strong>Ideação</strong>, <strong>Validação</strong> e <strong>Prototipagem</strong>.</p>
+            <p>Desde o início, nossa equipe se dedicou a entender as necessidades e desafios enfrentados pela população durante as enchentes. Com o apoio de especialistas e a colaboração da comunidade, chegamos a uma solução prática e eficaz. Hoje, estamos orgulhosos de apresentar um site que é mais do que uma ferramenta – é uma rede de suporte e cuidado.</p>
+        </section>
+
+        <section>
+            <h2>Nossa Solução 🌊</h2>
+            <p>O site "Enchentes no RS" foi projetado para fornecer suporte acessível e informações essenciais de maneira prática e direta. Nossa missão é facilitar o acesso à informação e orientar a população durante enchentes, sempre com uma interface intuitiva e fácil de navegar. Nossa plataforma oferece:</p>
+            <ul>
+                <li><strong>Alertas em Tempo Real</strong>: Informações atualizadas para manter a população informada sobre riscos de enchentes em suas áreas.</li>
+                <li><strong>Mapas Interativos</strong>: Localização de áreas seguras, pontos de apoio e locais de abrigo próximos.</li>
+                <li><strong>Dicas de Preparação e Sobrevivência</strong>: Instruções claras e práticas para que todos possam se preparar da melhor forma possível.</li>
+            </ul>
+            <p>Nosso compromisso é com a clareza, acessibilidade e eficiência. Queremos oferecer à comunidade uma plataforma confiável, onde cada informação seja fácil de encontrar e essencial para a segurança de todos. O "Enchentes no RS" não é apenas um site; é uma ponte entre a comunidade e os recursos necessários para enfrentar enchentes com resiliência e preparo.</p>
+        </section>
+
+        <section>
+            <h2>Nossa Visão de Futuro</h2>
+            <p>Acreditamos que a tecnologia pode ser uma poderosa aliada na prevenção e no enfrentamento de desastres naturais. Queremos crescer e expandir nosso alcance, proporcionando a mais pessoas as informações e o suporte de que precisam em momentos críticos. O "Enchentes no RS" continua comprometido em aprimorar a plataforma e criar novas funcionalidades que atendam às necessidades da população do Rio Grande do Sul.</p>
+            <p>Junte-se a nós nessa missão! Seja parte da mudança e ajude-nos a construir uma comunidade mais preparada e segura diante dos desafios impostos pelas enchentes.</p>
+        </section>
+        
+        <footer>
+            <p><strong>Enchentes no RS – A Ajuda Que Você Precisa, Quando Precisa.</strong></p>
+        </footer>
     </section>
-  </main>
-
-  <!-- Rodapé -->
-  <footer class="text-center py-3 bg-success text-white">
-    <p>&copy; 2024 Central de Emergência de Enchentes - Rio Grande do Sul</p>
-    <p><a href="https://www.gov.br" target="_blank" class="text-warning">Visite o site do Governo para mais informações</a></p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
