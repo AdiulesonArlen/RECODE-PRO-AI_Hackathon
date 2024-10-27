@@ -6,47 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Informações de contatos de emergência durante enchentes no Rio Grande do Sul">
     <title>Contatos de Emergência</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="bg-light d-flex flex-column justify-content-between">
+
     <!-- Cabeçalho -->
-    <header>
+    <header class="text-center py-5 bg-success text-white">
         <h1>Contatos de Emergência</h1>
         <p>Saiba como entrar em contato para pedir ajuda</p>
     </header>
 
     <!-- Alerta de Emergência -->
-    <div class="alert-banner">
-        <p>⚠️ Em caso de emergência, contate as autoridades imediatamente!</p>
-    </div>
+    
+    <div class="alert alert-danger text-center my-3 bi bi-exclamation-triangle">
+        Em caso de emergência, contate as autoridades imediatamente!
+      </div>
 
-    <hr>
+    <main class="flex-grow-1">
+        <!-- Seção de Contatos de Emergência -->
+        <section class="contact-info container my-5">
+            <h2>Meios de Contato</h2>
+            <ul>
+                <li><strong>Corpo de Bombeiros:</strong> <a href="tel:193">193</a></li>
+                <li><strong>Polícia Militar:</strong> <a href="tel:190">190</a></li>
+                <li><strong>Defesa Civil:</strong> <a href="tel:199">199</a></li>
+                <li><strong>Serviço de Atendimento Móvel de Urgência (SAMU):</strong> <a href="tel:192">192</a></li>
+                <li><strong>Centro de Informações da Defesa Civil:</strong> <a href="tel:0800-644-1515">0800-644-1515</a></li>
+            </ul>
+            <h2>Orientações</h2>
+            <p>Quando ligar:</p>
+            <ul>
+                <li>Em caso de incêndio ou resgate de pessoas.</li>
+                <li>Para relatar alagamentos ou deslizamentos de terra.</li>
+                <li>Quando houver necessidade de atendimento médico de emergência.</li>
+                <li>Para informar situações de risco ou emergência ambiental.</li>
+            </ul>
+        </section>
 
-    <!-- Seção de Contatos de Emergência -->
-    <section class="contact-info">
-        <h2>Meios de Contato</h2>
-        <ul>
-            <li><strong>Corpo de Bombeiros:</strong> <a href="tel:193">193</a></li>
-            <li><strong>Polícia Militar:</strong> <a href="tel:190">190</a></li>
-            <li><strong>Defesa Civil:</strong> <a href="tel:199">199</a></li>
-            <li><strong>Serviço de Atendimento Móvel de Urgência (SAMU):</strong> <a href="tel:192">192</a></li>
-            <li><strong>Centro de Informações da Defesa Civil:</strong> <a href="tel:0800-644-1515">0800-644-1515</a></li>
-        </ul>
-        <h2>Orientações</h2>
-        <p>Quando ligar:</p>
-        <ul>
-            <li>Em caso de incêndio ou resgate de pessoas.</li>
-            <li>Para relatar alagamentos ou deslizamentos de terra.</li>
-            <li>Quando houver necessidade de atendimento médico de emergência.</li>
-            <li>Para informar situações de risco ou emergência ambiental.</li>
-        </ul>
-    </section>
+        <div class="container text-center my-4">
+            <a href="index.html" class="btn btn-outline-success btn-lg"><i class="bi bi-arrow-left"></i> Voltar</a>
+        </div>
+    </main>
 
-    <footer>
+    <!-- Rodapé -->
+    <footer class="text-center py-3 bg-success text-white">
         <p>&copy; 2024 Central de Emergência de Enchentes - Rio Grande do Sul</p>
-        <p><a href="https://www.gov.br" target="_blank">Visite o site do Governo para mais informações</a></p>
-    </footer>
+        <p><a href="https://www.gov.br" target="_blank" class="text-warning">Visite o site do Governo para mais informações</a></p>
+      </footer>
 </body>
 
 </html>

@@ -6,59 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Informações sobre abrigos e locais seguros durante enchentes no Rio Grande do Sul">
     <title>Abrigos Próximos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="bg-light d-flex flex-column justify-content-between">
+
     <!-- Cabeçalho -->
-    <header>
+    <header class="text-center py-5 bg-success text-white">
         <h1>Abrigos Próximos</h1>
         <p>Encontre locais seguros durante as enchentes</p>
     </header>
 
-    <!-- Alerta de Emergência -->
-    <div class="alert-banner">
-        <p>⚠️ Em caso de enchente, dirija-se a um dos abrigos listados abaixo!</p>
-    </div>
+    <main class="flex-grow-1">
+        <!-- Alerta de Emergência -->
+        <div class="alert alert-danger text-center my-3 bi bi-exclamation-triangle">
+             Em caso de enchente, dirija-se a um dos abrigos listados abaixo!
+        </div>
 
-    <hr>
+        <!-- Seção de Abrigos -->
+        <section class="shelters container my-5">
+            <h2>Locais Seguros e Abrigos</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Centro Comunitário São Miguel</strong>
+                    <p>Rua das Flores, 123 - Bairro Jardim</p>
+                    <p>Capacidade: 200 pessoas</p>
+                </li>
+                <li class="list-group-item">
+                    <strong>Ginásio Poliesportivo Municipal</strong>
+                    <p>Avenida das Águas, 456 - Centro</p>
+                    <p>Capacidade: 500 pessoas</p>
+                </li>
+                <li class="list-group-item">
+                    <strong>Escola Estadual João XXIII</strong>
+                    <p>Rua da Esperança, 789 - Bairro Novo</p>
+                    <p>Capacidade: 300 pessoas</p>
+                </li>
+                <li class="list-group-item">
+                    <strong>Parque da Cidade</strong>
+                    <p>Avenida Principal, s/n - Bairro Central</p>
+                    <p>Capacidade: 150 pessoas</p>
+                </li>
+                <li class="list-group-item">
+                    <strong>Centro de Atendimento ao Cidadão</strong>
+                    <p>Rua do Comércio, 321 - Bairro Vila Nova</p>
+                    <p>Capacidade: 250 pessoas</p>
+                </li>
+            </ul>
+        </section>
+        <div class="container text-center my-4">
+            <a href="index.html" class="btn btn-outline-success btn-lg"><i class="bi bi-arrow-left"></i> Voltar</a>
+          </div>
+    </main>
 
-    <!-- Seção de Abrigos -->
-    <section class="shelters">
-        <h2>Locais Seguros e Abrigos</h2>
-        <ul>
-            <li>
-                <strong>Centro Comunitário São Miguel</strong>
-                <p>Rua das Flores, 123 - Bairro Jardim</p>
-                <p>Capacidade: 200 pessoas</p>
-            </li>
-            <li>
-                <strong>Ginásio Poliesportivo Municipal</strong>
-                <p>Avenida das Águas, 456 - Centro</p>
-                <p>Capacidade: 500 pessoas</p>
-            </li>
-            <li>
-                <strong>Escola Estadual João XXIII</strong>
-                <p>Rua da Esperança, 789 - Bairro Novo</p>
-                <p>Capacidade: 300 pessoas</p>
-            </li>
-            <li>
-                <strong>Parque da Cidade</strong>
-                <p>Avenida Principal, s/n - Bairro Central</p>
-                <p>Capacidade: 150 pessoas</p>
-            </li>
-            <li>
-                <strong>Centro de Atendimento ao Cidadão</strong>
-                <p>Rua do Comércio, 321 - Bairro Vila Nova</p>
-                <p>Capacidade: 250 pessoas</p>
-            </li>
-        </ul>
-    </section>
-
-    <footer>
+    <!-- Rodapé -->
+    <footer class="text-center py-3 bg-success text-white">
         <p>&copy; 2024 Central de Emergência de Enchentes - Rio Grande do Sul</p>
-        <p><a href="https://www.gov.br" target="_blank">Visite o site do Governo para mais informações</a></p>
+        <p><a href="https://www.gov.br" target="_blank" class="text-warning">Visite o site do Governo para mais informações</a></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

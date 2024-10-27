@@ -1,3 +1,5 @@
+
+
 # RECODE-PRO-AI_Hackathon
 
 ## Projeto do Hackathon - Recode Pro AI: Formação em Desenvolvimento Fullstack com IA
@@ -50,7 +52,9 @@ Este projeto foi criado para auxiliar a população do Rio Grande do Sul em caso
 ## Como Visualizar e Testar o Protótipo
 
 1. Clone o repositório:
+   
    git clone https://github.com/AdiulesonArlen/RECODE-PRO-AI_Hackathon.git
+   
 2. Abra o projeto no Visual Studio Code.
 3. Verifique a visualização do layout e certifique-se de que o CSS foi carregado corretamente.
 4. Para dúvidas adicionais, consulte a documentação neste repositório.
@@ -68,8 +72,9 @@ Contribuições são bem-vindas!
 
 1. Faça um fork deste repositório.
 2. Crie uma nova branch para suas alterações:
-    git checkout -b minha-nova-feature
-  
+   ```bash
+   git checkout -b minha-nova-feature
+   ```
 3. Envie um pull request com a sua contribuição.
 
 ---
@@ -81,6 +86,11 @@ Para dúvidas ou sugestões, entre em contato:
 📧 E-mail: meganalice661@hotmail.com
 **Adíuleson Arlen**
 📧 E-mail: adiulesonarlen@gmail.com
+***Flávio César***
+📧 E-mail: flaviocesardev@gmail.com
+**Roberto Jefferson**
+📧 E-mail: jefferson.recados@gmail.com
+
 
 ---
 
@@ -97,5 +107,3 @@ Este projeto é distribuído sob a licença MIT. Consulte o arquivo `LICENSE` pa
 - **Consolidação de Seções**: Removi redundâncias nas descrições.
 - **Seção de Problemas Conhecidos**: Organizada e mais concisa.
 - **Detalhes de Funcionalidades e Critérios de Avaliação**: Reformulados para leitura fácil.
-  
-Agora, o README.md está organizado e direto, pronto para ser usado!

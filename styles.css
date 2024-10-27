@@ -1,20 +1,28 @@
 /* Estilos Globais */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+a{
+  text-decoration: none;
+}
+
 body {
+  display: flex; /* Adiciona flex ao body para layout */
+  flex-direction: column; /* Mantém o layout em coluna */
+  min-height: 100vh; /* Garante que o body ocupe toda a altura */
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #f9f9f9; /* Fundo leve */
+  color: #333; /* Cor do texto padrão */
   line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
-  background-color: #007BFF;
+  background-color: #28a745; /* Verde */
   color: #fff;
   padding: 1.5em;
   text-align: center;
@@ -31,12 +39,13 @@ header p {
 
 /* Alerta de Emergência */
 .alert-banner {
-  background-color: #FF5733;
-  color: white;
+  background-color: #f4c3b8; /* Alerta em vermelho */
+  color: rgb(255, 0, 0);
   text-align: center;
   padding: 10px;
   font-weight: bold;
   margin-top: -10px;
+  border: 3px solid #8a7e00; /* Borda mais grossa e amarela escura */
 }
 
 .alert-banner p {
@@ -52,41 +61,19 @@ header p {
   padding: 2rem;
 }
 
-.buttons button {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  padding: 1em;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  width: 100%;
-  max-width: 200px;
-  min-height: 60px; /* Altura mínima uniforme */
-  display: flex;
-  align-items: center; /* Alinhamento vertical do conteúdo */
-  justify-content: center; /* Centralizar o texto */
+.buttons .btn {
+  font-weight: bold; /* Texto mais grosso */
+  border-width: 3px; /* Aumenta a largura da borda */
 }
 
-.buttons button:hover {
-  background-color: #0056b3;
-}
-
-/* Estilo do texto nos botões */
-.buttons h3 {
-  font-size: 1rem;
-  font-weight: normal;
-  margin: 0; /* Remove margens extras */
-}
-
-/* Rodapé */
+/* Estilo do Rodapé */
 footer {
   text-align: center;
-  background-color: #333;
-  color: white;
-  padding: 1.5em 0;
-  margin-top: 1.5rem;
+  background-color: #28a745; /* Verde */
+  color: white; /* Cor do texto do rodapé */
+  padding: 1.5em 0; /* Espaçamento do rodapé */
+  position: relative; /* Mantém a posição relativa */
+  margin-top: 1.5rem; /* Espaçamento acima do rodapé */
 }
 
 footer p {
@@ -94,23 +81,34 @@ footer p {
 }
 
 footer a {
-  color: #FFD700;
-  text-decoration: none;
+  color: #ffd700; /* Amarelo */
+  text-decoration: none; /* Remove o sublinhado do link */
 }
 
 footer a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Sublinhado no hover */
 }
 
 /* Layout Responsivo */
 @media (min-width: 768px) {
   .buttons {
-      gap: 1.5rem;
+      gap: 1.5rem; /* Aumenta o espaçamento entre os botões em telas maiores */
   }
 
-  .buttons button {
-      font-size: 1.1rem;
-      padding: 1.2em 2em;
-      max-width: 220px;
+  .buttons .btn {
+      font-size: 1.1rem; /* Aumenta o tamanho da fonte dos botões */
+      padding: 1.2em 2em; /* Aumenta o padding dos botões */
   }
+}
+
+footer {
+  position: fixed; /* Torna o rodapé fixo */
+  bottom: 0; /* Posiciona o rodapé na parte inferior */
+  left: 0; /* Alinha à esquerda */
+  right: 0; /* Alinha à direita */
+  z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+main {
+  padding-bottom: 80px; /* Adiciona espaço na parte inferior para não sobrepor o rodapé */
 }
